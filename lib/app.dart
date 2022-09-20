@@ -5,17 +5,12 @@ class App extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('AppPage'),
-        centerTitle: true,
+    return MaterialApp(
+      title: 'Flutter Arch',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
       ),
-      body: const Center(
-        child: Text(
-          'AppPage is working',
-          style: TextStyle(fontSize: 20),
-        ),
-      ),
+      home: Container(),
     );
   }
 }
