@@ -4,16 +4,11 @@ import 'package:flutter_arch/features/auth/domain/entities/user.dart';
 
 class UserModel extends User {
   const UserModel({
-    required String name,
-    required DateTime bornDate,
-    required String pictureUrl,
-    required String email,
-  }) : super(
-          name: name,
-          bornDate: bornDate,
-          pictureUrl: pictureUrl,
-          email: email,
-        );
+    required super.name,
+    required super.bornDate,
+    required super.pictureUrl,
+    required super.email,
+  });
 
   Map<String, dynamic> toMap() {
     return {
