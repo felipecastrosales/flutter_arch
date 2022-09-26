@@ -23,7 +23,7 @@ class DoLoginDataSourceApi implements DoLoginDataSource {
       );
       return UserModel.fromMap(response.data);
     } catch (e) {
-      throw  ServerFailure();
+      throw ServerFailure();
     }
   }
 }

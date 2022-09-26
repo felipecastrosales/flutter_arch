@@ -9,8 +9,8 @@ environment:
 scripts: 
   test: flutter test --coverage test/
   gen_coverage: genhtml coverage/lcov.info -o coverage/html
-  analyze: dartanalyzer .
-  format: dartfmt -w .
+  analyze: dart analyze .
+  format: dart format .
 
 dependencies:
   cupertino_icons: ^1.0.2
